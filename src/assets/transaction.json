@@ -1,0 +1,20 @@
+[
+{
+	"transaction_id":"T001",
+	"Amount":"3000",
+	"Category":"Electricity",
+	"Notes":"Electricity Bill for May",
+	"Date":"28/05/2020",
+	"Time":"10:20:55",
+	"Mode_of_payment":"Cash"
+},
+{
+	"transaction_id":"T002",
+	"Amount":"500",
+	"Category":"Petrol",
+	"Notes":"Petrol in car",
+	"Date":"25/05/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
+}
+]
