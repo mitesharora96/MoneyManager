@@ -6,90 +6,55 @@
         <div class="mx-5 p-5 rounded" style="background-color:white;">
              <h6>Total Spending</h6>
              <h2>{{spending}}</h2>
-             <div class="progress" style="width:50%">
-                <div class="progress-bar bg-danger" style="width:10%"></div>
-             </div>
-             <button type="button" class="btn btn-danger mt-5" data-toggle="modal" data-target="#myModal">Add Transaction</button>
-            <button type="button" routerLink='/Report' class="btn btn-danger float-right  mt-5">View Report</button>
-
-                            <!-- The Modal -->
-                <div class="modal" id="myModal">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-  
-                       <!-- Modal Header -->
-                               <div class="modal-header">
-                                    <h4 class="modal-title">Add Transaction</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              </div>
-  
-                          <!-- Modal body -->
-                            <div class="modal-body">
-                            Modal body..
-                            </div>
-  
-                          <!-- Modal footer -->
-                          <div class="modal-footer">
-                            
-                            <button type="button" class="btn btn-danger">Add</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                          </div>
-  
-                              </div>
-                        </div>
-             </div>
-             
+                 <div class="progress" style="width:50%">
+                    <div class="progress-bar bg-danger" style="width:10%"></div>
+                 </div>
+             <button mat-raised-button mat-button (click)="onAddTransaction()" color="warn" class="mt-5" >Add Transaction</button>
+            <button mat-raised-button color="warn" class="mt-5 float-right" routerLink='/Report' >View Report</button>     
         </div>
 
         <br><br>
 
-        <div class="mat-elevation-z8">
-            <table mat-table [dataSource]="dataSource">
-          
-                <!-- transaction_id Column 
-                <ng-container matColumnDef="transaction_id">
-                    <th mat-header-cell *matHeaderCellDef> transaction_id </th>
-                    <td mat-cell *matCellDef="let element"> {{element.transaction_id}} </td>
-                  </ng-container>-->
+        <div class="mx-5 p-5 rounded" style="background-color:white;">
+            <h1>Mitesh Arora</h1>
 
-              <!-- Date Column -->
-              <ng-container matColumnDef="Date">
-                <th mat-header-cell *matHeaderCellDef> Date </th>
-                <td mat-cell *matCellDef="let element"> {{element.Date}} </td>
-              </ng-container>
-          
-              <!-- Time Column -->
-              <ng-container matColumnDef="Time">
-                <th mat-header-cell *matHeaderCellDef> Time </th>
-                <td mat-cell *matCellDef="let element"> {{element.Time}} </td>
-              </ng-container>
-          
-              <!-- Category Column -->
-              <ng-container matColumnDef="Category">
-                <th mat-header-cell *matHeaderCellDef> Category </th>
-                <td mat-cell *matCellDef="let element"> {{element.Category}} </td>
-              </ng-container>
-          
-              <!-- Notes Column -->
-              <ng-container matColumnDef="Notes">
-                <th mat-header-cell *matHeaderCellDef> Notes </th>
-                <td mat-cell *matCellDef="let element"> {{element.Notes}} </td>
-              </ng-container>
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-              <!-- Amount Column -->
-              <ng-container matColumnDef="Amount">
-                <th mat-header-cell *matHeaderCellDef> Amount </th>
-                <td mat-cell *matCellDef="let element"> {{element.Amount}} </td>
-              </ng-container>
-          
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-          
-           <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>-->
-          </div>
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+              
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+              
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="symbol">
+                  <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
 
-    </div>
+         </div>
+   
+   
+        </div>
 </div>
 
 
