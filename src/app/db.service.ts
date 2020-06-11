@@ -33,7 +33,9 @@ export class DbService{
         //   ];
 
  
-        return this.http.post('../assets/addT.json',ELEMENT_DATA);
+        return this.http.post('https://jsonplaceholder.typicode.com/posts',ELEMENT_DATA).map(
+            (res)=>res.json()
+        );
      }
 
 }
