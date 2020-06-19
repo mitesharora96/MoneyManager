@@ -16,5 +16,149 @@
 	"Date":"25/05/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T003",
+	"Amount":"5200",
+	"Category":"Diesal",
+	"Notes":"Diesal in car",
+	"Date":"25/05/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T004",
+	"Amount":"2500",
+	"Category":"Laundry",
+	"Notes":"Laundry",
+	"Date":"25/05/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T005",
+	"Amount":"1000",
+	"Category":"Shopping",
+	"Notes":"Dmart Shopping",
+	"Date":"25/05/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T006",
+	"Amount":"1500",
+	"Category":"Grocery",
+	"Notes":"Dmart",
+	"Date":"25/06/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T007",
+	"Amount":"800",
+	"Category":"Petrol",
+	"Notes":"Petrol in car",
+	"Date":"22/05/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Cash"
+},
+{
+	"transaction_id":"T008",
+	"Amount":"1800",
+	"Category":"Shopping",
+	"Notes":"Clothes",
+	"Date":"25/01/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T009",
+	"Amount":"5500",
+	"Category":"Grocery",
+	"Notes":"Dmart",
+	"Date":"20/08/2020",
+	"Time":"12:20:55",
+	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T010",
+	"Amount":"3500",
+	"Category":"Electricity",
+	"Notes":"Light Bill",
+	"Date":"10/04/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T011",
+	"Amount":"600",
+	"Category":"Internet",
+	"Notes":"Wifi Bill",
+	"Date":"25/03/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Cash"
+},
+{
+	"transaction_id":"T012",
+	"Amount":"400",
+	"Category":"Phone",
+	"Notes":"Phone Bill",
+	"Date":"15/04/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Cash"
+},
+{
+	"transaction_id":"T013",
+	"Amount":"3500",
+	"Category":"Gas",
+	"Notes":"Gas Bill",
+	"Date":"15/08/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T014",
+	"Amount":"6500",
+	"Category":"Rental",
+	"Notes":"House Rent",
+	"Date":"18/02/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
+},
+{
+	"transaction_id":"T015",
+	"Amount":"500",
+	"Category":"Phone",
+	"Notes":"Phone Bill",
+	"Date":"10/06/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Cash"
+},
+{
+	"transaction_id":"T016",
+	"Amount":"3500",
+	"Category":"Electricity",
+	"Notes":"Light Bill",
+	"Date":"10/04/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T017",
+	"Amount":"6400",
+	"Category":"Electricity",
+	"Notes":"Light Bill",
+	"Date":"10/04/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Credit Card"
+},
+{
+	"transaction_id":"T018",
+	"Amount":"4500",
+	"Category":"Rental",
+	"Notes":"House Bill",
+	"Date":"10/04/2020",
+	"Time":"16:20:55",
+	"Mode_of_payment":"Debit Card"
 }
 ]

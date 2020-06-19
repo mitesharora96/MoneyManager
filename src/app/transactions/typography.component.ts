@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import {DbService} from '../db.service'
 import { Time } from '@angular/common';
 import {BehaviorSubject, Observable} from 'rxjs';
-import {MatDialog} from '@angular/material/dialog';
 import { addTransactionComponent } from 'app/AddTransaction/addTransaction.component';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
 
 export interface TransactionData {
   
@@ -53,18 +54,16 @@ export class TypographyComponent implements OnInit {
   private transactData$: BehaviorSubject<string> = new  BehaviorSubject<string>('');
   public $transactData: Observable<string> = this.transactData$.asObservable();
   spending:any=5000;
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  transactionData:TransactionData[];
+  displayedColumns: string[] = ['Date', 'Time', 'Category', 'Amount','Notes'];
+  //dataSource = this.transactionData;
+  dataSource = new MatTableDataSource(this.transactionData);
 
-  constructor(private db :DbService,public dialog: MatDialog) { }
+  constructor(private db :DbService) { }
 
-  // openDialog() {
-  //   const dialogRef = this.dialog.open(addTransactionComponent);
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log(`Dialog result: ${result}`);
-  //   });
-  // }
+  
 
   onAddTransaction(){
     this.db.addTransaction(ELEMENT_DATA).subscribe(
@@ -79,10 +78,12 @@ export class TypographyComponent implements OnInit {
   }
 
   ngOnInit() {
-    //this.dataSource.paginator = this.paginator;
+    
     this.db.getTransactions().subscribe(
        (data)=> {
-        console.log(`inside loop ${data}`);
+         this.transactionData=data;
+        console.log(`inside loop sdsdsdsd ${this.transactionData}`);
+        console.log(this.transactionData)
        },
        err => {
         console.log(err);
@@ -90,7 +91,7 @@ export class TypographyComponent implements OnInit {
 
      );
 
-    
+     this.dataSource.sort = this.sort;
 
      
      this.$transactData.subscribe(value => {

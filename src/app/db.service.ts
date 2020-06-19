@@ -17,6 +17,12 @@ export class DbService{
         )
      }
 
+     getMyprofile(){
+        return  this.http.get('../assets/MyProfile.json').map(
+            (res)=>res.json()
+        )
+     }
+
      addTransaction(ELEMENT_DATA:any){
 
         // const ELEMENT_DATA: any = [
