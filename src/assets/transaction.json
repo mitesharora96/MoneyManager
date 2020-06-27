@@ -4,7 +4,7 @@
 	"Amount":"3000",
 	"Category":"Electricity",
 	"Notes":"Electricity Bill for May",
-	"Date":"28/05/2020",
+	"Date":"05/28/2020",
 	"Time":"10:20:55",
 	"Mode_of_payment":"Cash"
 },
@@ -13,7 +13,7 @@
 	"Amount":"500",
 	"Category":"Petrol",
 	"Notes":"Petrol in car",
-	"Date":"25/05/2020",
+	"Date":"04/25/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -22,7 +22,7 @@
 	"Amount":"5200",
 	"Category":"Diesal",
 	"Notes":"Diesal in car",
-	"Date":"25/05/2020",
+	"Date":"05/15/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -31,7 +31,7 @@
 	"Amount":"2500",
 	"Category":"Laundry",
 	"Notes":"Laundry",
-	"Date":"25/05/2020",
+	"Date":"04/17/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -40,7 +40,7 @@
 	"Amount":"1000",
 	"Category":"Shopping",
 	"Notes":"Dmart Shopping",
-	"Date":"25/05/2020",
+	"Date":"03/05/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -49,7 +49,7 @@
 	"Amount":"1500",
 	"Category":"Grocery",
 	"Notes":"Dmart",
-	"Date":"25/06/2020",
+	"Date":"02/20/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -58,7 +58,7 @@
 	"Amount":"800",
 	"Category":"Petrol",
 	"Notes":"Petrol in car",
-	"Date":"22/05/2020",
+	"Date":"01/25/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Cash"
 },
@@ -67,7 +67,7 @@
 	"Amount":"1800",
 	"Category":"Shopping",
 	"Notes":"Clothes",
-	"Date":"25/01/2020",
+	"Date":"03/01/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -76,7 +76,7 @@
 	"Amount":"5500",
 	"Category":"Grocery",
 	"Notes":"Dmart",
-	"Date":"20/08/2020",
+	"Date":"04/08/2020",
 	"Time":"12:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -85,7 +85,7 @@
 	"Amount":"3500",
 	"Category":"Electricity",
 	"Notes":"Light Bill",
-	"Date":"10/04/2020",
+	"Date":"02/14/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -94,7 +94,7 @@
 	"Amount":"600",
 	"Category":"Internet",
 	"Notes":"Wifi Bill",
-	"Date":"25/03/2020",
+	"Date":"06/02/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Cash"
 },
@@ -103,7 +103,7 @@
 	"Amount":"400",
 	"Category":"Phone",
 	"Notes":"Phone Bill",
-	"Date":"15/04/2020",
+	"Date":"06/12/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Cash"
 },
@@ -112,7 +112,7 @@
 	"Amount":"3500",
 	"Category":"Gas",
 	"Notes":"Gas Bill",
-	"Date":"15/08/2020",
+	"Date":"05/08/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -121,7 +121,7 @@
 	"Amount":"6500",
 	"Category":"Rental",
 	"Notes":"House Rent",
-	"Date":"18/02/2020",
+	"Date":"04/10/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 },
@@ -130,7 +130,7 @@
 	"Amount":"500",
 	"Category":"Phone",
 	"Notes":"Phone Bill",
-	"Date":"10/06/2020",
+	"Date":"01/06/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Cash"
 },
@@ -139,7 +139,7 @@
 	"Amount":"3500",
 	"Category":"Electricity",
 	"Notes":"Light Bill",
-	"Date":"10/04/2020",
+	"Date":"03/04/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -148,7 +148,7 @@
 	"Amount":"6400",
 	"Category":"Electricity",
 	"Notes":"Light Bill",
-	"Date":"10/04/2020",
+	"Date":"05/14/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Credit Card"
 },
@@ -157,7 +157,7 @@
 	"Amount":"4500",
 	"Category":"Rental",
 	"Notes":"House Bill",
-	"Date":"10/04/2020",
+	"Date":"05/24/2020",
 	"Time":"16:20:55",
 	"Mode_of_payment":"Debit Card"
 }

@@ -53,10 +53,10 @@ export const AdminLayoutRoutes: Routes = [
     //     }]
     // }
    /* { path: 'dashboard',      component: DashboardComponent },*/
-   { path: 'transactions',     component: TypographyComponent },
-    { path: 'my-account',   component: UserProfileComponent },
-    { path: 'my-wallet',     component: TableListComponent },
-    { path: 'Report',          component: IconsComponent },
+    { path: 'transactions',     component: TypographyComponent },
+     { path: 'my-account',   component: UserProfileComponent },
+     { path: 'my-wallet',     component: TableListComponent },
+     { path: 'Report',          component: IconsComponent },
    /* { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },*/

@@ -14,9 +14,9 @@
                         <h6>Total Spending</h6>
                         <h2>{{spending}}</h2>
                             <div class="progress" style="width:50%">
-                               <div class="progress-bar bg-danger" style="width:10%"></div>
+                               <div class="progress-bar bg-danger" [ngStyle]="{'width.%': width}" ></div>
                             </div>
-                        <button mat-raised-button mat-button (click)="onAddTransaction()" color="warn" class="mt-5" >Add Transaction</button>
+                        <button mat-raised-button mat-button (click)="onTClick()" color="warn" class="mt-5" >Add Transaction</button>
                        <button mat-raised-button color="warn" class="mt-5 float-right" routerLink='/Report' >View Report</button>
                     </div>    
                 </div>

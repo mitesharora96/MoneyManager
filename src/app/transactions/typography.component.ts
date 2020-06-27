@@ -53,12 +53,15 @@ export class TypographyComponent implements OnInit {
 
   private transactData$: BehaviorSubject<string> = new  BehaviorSubject<string>('');
   public $transactData: Observable<string> = this.transactData$.asObservable();
-  spending:any=5000;
+  spending:number=0; 
+  i:number=0;
+  walletAmount:number=80000;
+  width:number;
   transactionData:TransactionData[];
   displayedColumns: string[] = ['Date', 'Time', 'Category', 'Amount','Notes'];
   //dataSource = this.transactionData;
   dataSource = new MatTableDataSource(this.transactionData);
-
+  temp:any;
   constructor(private db :DbService) { }
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
@@ -77,20 +80,42 @@ export class TypographyComponent implements OnInit {
     console.log("Inside add transaction")
   }
 
+  onTClick(){
+    
+    while(this.i<this.transactionData.length)
+     {
+       this.temp=this.transactionData[this.i].Amount;
+        this.spending=this.spending+parseInt(this.temp);
+        this.i++;      
+     }
+     this.width=(this.spending/this.walletAmount)*100;
+    
+    
+  }
+
   ngOnInit() {
     
     this.db.getTransactions().subscribe(
        (data)=> {
          this.transactionData=data;
-        console.log(`inside loop sdsdsdsd ${this.transactionData}`);
-        console.log(this.transactionData)
+        //console.log(`inside loop sdsdsdsd ${this.transactionData}`);
+        //console.log(this.transactionData)
+       
        },
        err => {
         console.log(err);
       }
 
      );
-
+     
+     while(this.i<this.transactionData.length)
+     {
+       this.temp=this.transactionData[this.i].Amount;
+        this.spending=this.spending+parseInt(this.temp);
+        this.i++;      
+     }
+     this.width=(this.spending/this.walletAmount)*100;
+     
      this.dataSource.sort = this.sort;
 
      
